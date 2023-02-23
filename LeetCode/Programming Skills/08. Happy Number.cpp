@@ -54,5 +54,5 @@ bool isHappy(int n) {
 int main() {
     int n;
     cin >> n;
-    cout << (isHappy(n)? "false":"true") << endl;
+    cout << ((isHappy(n) == 1)? "false":"true") << endl;
 }
