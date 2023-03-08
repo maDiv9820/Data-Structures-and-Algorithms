@@ -62,7 +62,7 @@ class Solution:
     def sortList(self, head: ListNode) -> ListNode:
         if not head or not head.next:
             return head
-        middleNode = None; slow = head; fast = head.next
+        slow = head; fast = head.next
         while fast and fast.next and fast.next.next:
             slow = slow.next
             fast = fast.next.next
